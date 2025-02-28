@@ -8,7 +8,7 @@ import {
 } from "./slices/counter";
 
 const App = () => {
-  const count = useAppSelector((state) => state.counter);
+  const count = useAppSelector((state) => state.counter.value);
   const dispatch = useAppDispatch();
   const [amount, setAmount] = useState(0);
 
